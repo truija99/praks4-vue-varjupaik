@@ -1,0 +1,683 @@
+* {
+	box-sizing: border-box;
+  	padding: 0;
+  	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body {
+	background-color: white;
+}
+.container1{
+	height: 220px;
+	background-color: white;
+	margin-bottom: 10px;
+}
+
+.content {
+	margin:0 auto;
+	width: 1140px;
+	background-color: white;
+}
+
+.clearfix:after {
+  content: "";  /*tühi sisu*/
+  display: table;
+  clear: both;
+}
+
+/*LOGO PILT JA TEKST*/
+.logo-text {
+	background-image: url("rescue-animals.jpg");
+	background-size: 300px;
+	margin:0px;
+	background-repeat: no-repeat;
+	float: left;
+}
+
+.header-text {
+	position: relative;
+	margin-top: 170px;
+	left: 0;
+	bottom: 0;
+	float: left;
+	padding-left:10px;
+	color: black;
+	font: normal 36px 'Cookie', cursive;
+}
+
+.logo-text h1 span{
+	color: green
+
+}
+
+/*NAVIGATSIOON*/
+.nav-items {
+	font-size: 24px;
+	font-weight: 600;
+	list-style-type: none;
+	float: right;
+	margin-top: 170px;
+}
+
+.nav-li {
+	display: inline-block;
+}
+
+.nav-li a{
+	text-decoration: none;
+	color: black;
+	margin-right: 20px;
+}
+.nav-items a:hover {
+    background-color: black;
+    color: white;
+    padding:20px;
+    border-radius: 30px;
+
+}
+
+.active  {
+	background-color: black;
+	color: white !important;
+	padding: 20px;
+	border-radius: 30px;
+}
+
+/*HERO IMAGE*/
+.hero-img1 {
+	height: auto;
+	width: 1140px;
+}
+
+/*KLIKITAVAD PILDID*/
+.flex-container {
+   	display: flex;
+  	flex-wrap: nowrap;
+  	margin:0 100px 0 100px;
+	justify-content: space-between;
+}
+
+.content-photos {
+ 	width: 150px;
+  	height: 300px;
+  	margin: 10px;
+  	text-align: center;
+ 	line-height: 75px;
+  	font-size: 30px;
+  	margin-top: 100px;    
+}
+
+.content1-cover {
+	width:280px;
+	height:280px;
+	border:0;
+}
+
+.content2-cover {
+	margin-top: 20px;
+}
+
+.content3-cover {
+	border: 0;
+	width: 150px;
+	height: 150px;
+	margin-top: 50px;
+}
+
+/*TSITAAT*/
+#quote {
+	margin: 100px 70px 0 70px;
+	border-top: 1px solid black;
+	padding: 60px 0 20px 0;
+	font-size: 28px;
+	text-align: center;
+}
+
+#quote-author {
+	margin: 0 70px 50px 70px;
+	border-bottom: 1px solid black;
+	padding: 40px 0 40px 0;
+	text-align: center;
+}
+
+/*KUST LEIDA*/
+#leidmine {
+	margin: 150px 0 100px 0;
+	text-align: center;
+	font-size: 36px;
+	font-weight: 400;
+}
+
+.container2 {
+	width: 900px;
+	display: flex;
+	justify-content: center;
+	align-content: flex-start;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	height: 900px;
+	justify-content: space-between;
+	margin-left: 10%;
+}
+
+.circle {
+    background-color: darkgrey;
+    width: 200px;
+    height: 200px;
+    border-radius: 1000px; 
+    margin: 0.5em;
+}
+
+.aligner {
+  	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+ 	height: 100%;
+ 	text-align: center;
+ 	font-size: 16px;
+ 	padding: 20px;
+ 	color: white;
+ }
+
+.mapouter {
+	position: relative;
+  	border: 0px;
+  	height: 100%;
+  	line-height: 0;
+}
+
+.mapouter iframe{
+    overflow: hidden;
+    padding: 0 !important;
+	margin: 0 !important;
+	float: left;
+	max-height: 100%;
+}
+
+#google-maps {
+	margin:100px 15% 0 15%;
+}
+
+
+/*VARJUPAIGAS.HTML*/
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: inline-block;
+  width: 500px;
+  height: 400px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 400px;
+  width: 500px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: white;
+}
+
+.container:hover .overlay  {
+  opacity: 1;
+}
+
+#varjupaigas {
+	text-decoration: none;
+	color: black;
+	font-size: 42px;
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	-webkit-transform: translate(-50%, -50%);
+  	-ms-transform: translate(-50%, -50%);
+  	transform: translate(-50%, -50%);
+ 	 text-align: center;
+}
+
+.flex-container {
+  	display: flex;
+	justify-content: center;
+}
+
+.flex-container > div {
+  width: 500px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+
+/*KASSID.HTML*/
+#kassid-h1 {
+	text-align: center;
+	font-size: 32px;
+	text-transform: uppercase;
+	margin: 100px 0 100px 0;
+}
+
+.animal-grid {
+    display: grid;
+    grid-template-columns: 320px 320px 320px;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.animal-grid a {
+	color: black;
+}
+
+.grid-cat img {
+    width: 320px;
+    height: 220px;
+    object-fit: cover;
+    padding-bottom: 10px;
+}
+
+#gender {
+    width: 27px;
+    height: auto;
+    float: left;
+}
+
+.grid-cat h3 {
+    float: left;
+    text-transform: uppercase;
+    font-size: 22px;
+    padding-left: 10px;
+}
+
+.grid-cat p {
+	background-color: #C0A057;
+	padding:10px;
+	font-size: 18px;
+	margin-bottom: 80px;
+}
+
+/*CAT.HTML, DOG.HTML*/
+
+.cat-section {
+    float: left;
+    margin-right: 50px;
+}
+
+.cat-section img {
+	width: 500px;
+	height: 400px;
+}
+
+#catname {
+	font-size: 32px;
+	float: left;
+}
+
+#gender2 {
+	margin-right: 100px;
+	width: 50px;
+    height: auto;
+    float: left;
+}
+tbody tr {
+    height: 30px;
+}
+
+th {
+    text-align: left;
+    padding-right: 50px;
+}
+
+table {
+	margin-bottom: 150px;
+}
+
+/*KAOTATUD*/
+
+.kaotatud-img {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+
+.animal-img {
+	height: 300px;
+	width: auto;
+}
+
+.kaotatud-text {
+	padding: 30px;
+	background-color:#C0A057;
+	font-size: 20px;
+	margin: 50px 0 100px 0;
+}
+
+#lisa-kuulutus{
+	text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.kuulutus {
+    width: 700px;
+    background-color: #E5E5E5;
+    border-radius: 30px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 50px;
+    padding: 50px;
+}
+
+.kuulutus-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    align-content: center;
+}
+
+.kuulutus-flex input, 
+.kuulutus-flex select {
+    width: 300px;
+    height: 30px;
+    border-style: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.kuulutus button {
+    width: 120px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #C0A057;
+    border-style: none;
+    margin: 80px auto 15px auto;
+    display: block;
+    color: #FFFFFF;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+/*TOETAJALE*/
+.img-section {
+    background-image: url("birds.jpg");
+    align-items: center;
+    justify-content: center;
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: 1140px;
+    background-attachment: fixed;
+    color: white;
+    font-size: 36px;
+    display: flex;
+    margin-top: -35px;
+    width: 1140px;
+    height: 500px;
+}
+
+#Toetajad {
+	text-align: center;
+	font-size: 42px;
+	text-transform: uppercase;
+	color: darkgreen;
+	margin: 100px 0 100px 0;
+}
+
+
+.toetajad-section{
+	max-width: 1000px;
+    margin: auto;
+    background: white;
+    margin-bottom: 100px;
+}
+
+.toetajad-text {
+	text-align: center;
+	color: darkgreen;
+	font-size: 32px;
+}
+
+.annetuskontod {
+	background-color: darkgreen;
+	text-align: center;
+	color: white;
+	font-size: 32px;
+	padding: 50px;
+	margin-top: 100px;
+}
+
+
+
+/*MEIST*/
+
+#meie-tegemistest-h1 {
+	text-align: center;
+	font-size: 42px;
+	text-transform: uppercase;
+	color: yellow;
+	margin: 100px 0 100px 0;
+}
+
+.img-section2 {
+
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+   	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.tegemistest-section{
+	max-width: 1000px;
+    margin: auto;
+    background: white;
+    margin-bottom: 100px;
+}
+
+.tegemistestpara {
+	background-color: yellow;
+	text-align: center;
+	color: black;
+	font-size: 32px;
+	padding: 50px;
+	margin-top: 100px;
+}
+
+
+/*KONTAKT.HTML*/
+#leidmine2 {
+	margin: 100px 0 100px 0;
+	text-align: center;
+	font-size: 36px;
+	font-weight: 400;
+}
+
+#leidmine3 {
+	margin: 200px 0 100px 0;
+	text-align: center;
+	font-size: 36px;
+	font-weight: 400;
+}
+.img-section2{
+	margin-bottom: 100px;
+}
+
+#subject {
+	width: 300px;
+	height: 100px;
+}
+
+.kontakt-kuulutus {
+	margin-bottom: 100px;
+}
+
+
+
+/*FOOTER*/
+
+.footer-distributed{
+	background-color: white;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: 16px sans-serif;
+	padding: 0 55px 0 55px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+	font: bold 16px sans-serif;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  black;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  green;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  black;
+	margin: 40px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:block;
+	line-height: 2.5;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 16px;
+	font-weight: normal;
+	margin: 0;
+	margin-top: 90px;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+
+.footer-distributed .footer-center .footer-info{
+	display: inline-block;
+	color: black;
+	vertical-align: middle;
+	margin:0;
+	line-height: 3;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height: 3;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;
+	margin-top: 50px;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about span,
+.footer-distributed .meie-toetajad span,
+.footer-kontakt{
+	display: block;
+	font: normal 28px 'Cookie', cursive;
+	color:green;
+	margin-bottom: 35px;
+}
+
+/*IKOONID*/
+
+.icons img{
+	text-align: center;
+	margin:0px 40px 40px 0;
+}
+
+.icons img:hover{
+	 filter: none;
+      -webkit-filter: grayscale(0);
+      -webkit-transform: scale(1.01);
+}
+
+.googleplus,
+.facebook,
+.twitter {
+	width: 40px;
+	height: 40px;
+}
+
+/*toetajate pildid*/
+.toetaja-img {
+	width: 200px;
+	height: 100px;
+}
+
+
+
+
+
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
